@@ -1,0 +1,18 @@
+//ADVANCED SOLIDITY
+//TO OPTIMES OUR GAS COST
+array takes storage in type of hashing
+mapping has blank storage
+any constant variables an immutable donot take storage the are part of byte code
+any constant in function only exist during the function 
+variables in function donot take storage as the are deleted once the fumction is executed
+string are dynmically size array
+every opcode defines some of the bytecode
+
+//CHANGES IN FUNDME.SOLIDITY
+we will change all the storage variables by appending _s
+and for the address that is immuatble we will append _i
+and we will chaneege throughout the contract
+in our withdarw function there is for loop which in result
+->chcking the condition from funders which is huge gas amount
+
+we will optimise by making it to read from memory instead of reading it from storage
